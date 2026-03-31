@@ -22,15 +22,15 @@ jobs:
 
     - name: Instalar dependencias
       run: |
-        pip install behave selenium webdriver-manager
+        pip install behave selenium webdriver-manager allure-behave
 
     - name: Correr pruebas
       run: |
-        python -m behave
+        python -m behave -f allure_behave.formatter:AllureFormatter -o reports/allure-results
 
-    - name: Subir reporte
+    - name: Subir reporte Allure
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: reporte-qa
-        path: reports/
+        name: allure-report
+        path: reports/allure-results
