@@ -1,0 +1,35 @@
+name: QA Automation Tests
+
+"on":
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v3
+
+    - name: Instalar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Instalar dependencias
+      run: |
+        pip install behave selenium webdriver-manager
+
+    - name: Correr pruebas
+      run: |
+        python -m behave
+
+    - name: Subir reporte
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: reporte-qa
+        path: reports/
