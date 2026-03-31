@@ -46,6 +46,11 @@ jobs:
       run: |
         allure generate reports/allure-results --clean -o reports/allure-report
 
+    - name: URL del reporte
+      if: always()
+      run: |
+        echo "🔗 Reporte disponible en: https://dunkandhu.github.io/tecfix-qa"
+
     - name: Publicar en GitHub Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v3
