@@ -3,6 +3,7 @@
 Framework de automatización QA para [tecfix.co](https://tecfix.co/) desarrollado con Python, Behave y Selenium.
 
 ![GitHub Actions](https://github.com/dunkandhu/tecfix-qa/actions/workflows/qa-tests.yml/badge.svg)
+[![Allure Report](https://img.shields.io/badge/Allure-Report-green)](https://dunkandhu.github.io/tecfix-qa)
 
 ## 🛠️ Stack tecnológico
 
@@ -61,6 +62,10 @@ Este proyecto usa un equipo de 9 agentes especializados con Claude Code:
 - 07 Experto Frontend — Selectores y UI
 - 08 Accesibilidad — UX y accesibilidad
 - 09 Revisor — QA Lead del equipo
+
+## 📊 Reporte de Pruebas
+
+Ver reporte en vivo 👉 https://dunkandhu.github.io/tecfix-qa
 
 ## 👤 Autor
 
