@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:tecfix.co)",
+      "Bash(curl -s -L -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" https://tecfix.co/)",
+      "Bash(python -c \"from pages.navegacion_page import NavegacionPage\")",
+      "Bash(find D:/tecfix-qa/tecfix-qa -name *.py)",
+      "Bash(python -m behave features/navegacion.feature)",
+      "Bash(python -m behave features/navegacion.feature:12)",
+      "Bash(python:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}
