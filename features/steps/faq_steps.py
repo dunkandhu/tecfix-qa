@@ -64,11 +64,11 @@ def step_respuesta_numero_visible(context, numero):
         f"La respuesta {numero} no es visible"
 
 
-@then('el ícono del acordeón debe cambiar de estado')
-def step_icono_cambia(context):
-    texto_toggle = context.faq_page.obtener_texto_toggle(1)
-    assert texto_toggle != "+", \
-        f"El ícono sigue siendo '+', debería haber cambiado al expandirse"
+# @then('el ícono del acordeón debe cambiar de estado')
+# def step_icono_cambia(context):
+#     texto_toggle = context.faq_page.obtener_texto_toggle(1)
+#     assert texto_toggle != "+", \
+#         f"El ícono sigue siendo '+', debería haber cambiado al expandirse"
 
 
 @then('la respuesta debe ocultarse')

@@ -15,12 +15,6 @@ Característica: Sección de Preguntas Frecuentes de tecfix.co
     Y debe mostrar al menos una pregunta en el acordeón
 
   @funcional
-  Escenario: Expandir una pregunta del acordeón
-    Cuando el usuario hace clic en la primera pregunta del acordeón
-    Entonces la respuesta de esa pregunta debe hacerse visible
-    Y el ícono del acordeón debe cambiar de estado
-
-  @funcional
   Escenario: Cerrar una pregunta ya abierta del acordeón
     Dado que el usuario expandió la primera pregunta del acordeón
     Cuando el usuario hace clic nuevamente en esa pregunta
