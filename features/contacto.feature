@@ -16,7 +16,7 @@ Característica: Canales de contacto de tecfix.co
 
   @funcional
   Escenario: El enlace de WhatsApp tiene el número correcto
-    Entonces el enlace de WhatsApp debe contener el número "573212331643"
+    Entonces el enlace de WhatsApp debe contener el número "573023398616"
     Y el enlace debe apuntar al dominio "wa.me"
 
   @funcional
